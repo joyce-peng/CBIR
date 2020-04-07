@@ -12,9 +12,7 @@ PCAD = 128
 TESTTYPE = 0
 
 def get_allpath(FILE_PATH = "E:/pyWorkspace/VLAD/data/"):
-    """ Read datafile holidays_images.dat and output a dictionary
-    mapping queries to the set of positive results (plus a list of all
-    images)"""
+    """ Read datafile holidays_images.dat and output a dictionary mapping all pictures"""
     file_path_list = []
     for line in open("holidays_images.dat", "r"):
         imname = line.strip()
@@ -23,9 +21,7 @@ def get_allpath(FILE_PATH = "E:/pyWorkspace/VLAD/data/"):
 
 
 def get_groundtruth(FILE_PATH = "E:/pyWorkspace/VLAD/data/"):
-    """ Read datafile holidays_images.dat and output a dictionary
-    mapping queries to the set of positive results (plus a list of all
-    images)"""
+    """ Read datafile holidays_images.dat and output a dictionary mapping queries"""
     file_path_list = []
     for line in open("holidays_images.dat", "r"):
         imname = line.strip()
